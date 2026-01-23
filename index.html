@@ -18,7 +18,8 @@
         }
 
         .apple-link {
-            font-size: 10vw; /* default scaling */
+            font-size: 80vw; /* large on all devices */
+            max-font-size: 400px; /* maximum size in pixels */
             color: white;
             text-decoration: none;
             cursor: pointer;
@@ -29,24 +30,17 @@
             opacity: 0.7;
         }
 
-        /* Media query for smaller devices */
-        @media (max-width: 600px) {
+        /* Media query for medium devices (tablets, etc.) */
+        @media (min-width: 601px) {
             .apple-link {
-                font-size: 80vw; /* much larger on small screens */
+                font-size: 80vw; /* keep it large */
             }
         }
 
-        /* Media query for medium devices */
-        @media (min-width: 601px) and (max-width: 900px) {
-            .apple-link {
-                font-size: 15vw; /* slightly larger on medium screens */
-            }
-        }
-
-        /* Media query for larger devices */
+        /* Media query for larger devices (desktops) */
         @media (min-width: 901px) {
             .apple-link {
-                font-size: 8vw; /* more subtle on larger screens */
+                font-size: 80vw; /* keep it consistently large */
             }
         }
     </style>
