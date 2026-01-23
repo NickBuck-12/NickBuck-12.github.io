@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        body {
+            background-color: #007AFF; /* Pacific Blue */
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .logo {
+            font-size: 40px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .button {
+            background-color: white;
+            color: #007AFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">&#xF8FF;</div>
+    <h1>Contact Information</h1>
+    <a href="AppleSupport.vcf" class="button" download>Download vCard</a>
+</body>
+</html>
